@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form practice</title>
+	<link href="https://fonts.googleapis.com/css?family=Charm|Indie+Flower|Lobster|Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anaheim|Exo+2|Montserrat|Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?famixly=Alegreya" rel="styltesesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya|Anaheim|Assistant|Cinzel|Lobster|Patua+One|Permanent+Marker|Special+Elite" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Lora|Oxygen|Playfair+Display|Poppins|Quicksand" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/drop-down.css" rel="stylesheet">
+	<link href="css/favorites.css" rel="stylesheet">
+<link href="css/media-querry.css" rel="stylesheet">
+	
+<style> 
+
+.header { 
+	border: 1px solid;
+	border-radius: 4px; 
+ 	padding-left: 10px;
+ 	padding-right: 10px; 
+ 	padding-top: 4px;
+ 	padding-bottom: 4px; 
+ 	background-color: DarkTurquoise; 
+ 	font-size: 25px;
+	font-family: 'Lobster', cursive;
+color: CornSilk;
+	} 
+
+form {
+padding: 34px; 
+background-color: Plum; 
+width: 25%; 
+margin: 0 auto; 
+font-family: 'Lobster', cursive;
+} 
+
+@media (max-width: 520px) {
+    form {
+        width: 75%;        
+  }   
+}
+
+
+body { 
+background: linear-gradient(Red 15%, PaleTurquoise 85%);
+height: 100vh; 
+ 
+} 
+
+textarea {
+  max-width: 100%; 
+max-height: 150px; 
+width: 200px; 
+height: 50px; 
+  
+}
+
+</style>
+<body>
+<header class="header" >
+		<a href="index.html"class="header">ABFreewrite.com</a>
+
+	</header>
+<div class="form">
+
+<form action="Welcome3.php" method="post">
+Name: <input type="text" name="name" maxlength="15" id="username" required>
+<span id="asterisk"></span>
+<div id="feedback"></div>
+E-mail: <input type="text" name="email" maxlength="27" id="email" required>
+<div id="reqd"></div>
+<p>Please select your favorite news subject<br>
+<input type="checkbox" name="formWheelchair" value="Wheelchair" /> wheelchair
+<input type="checkbox" name="formWheelchair" value="Animals" /> Animals 
+<input type="checkbox" name="formWheelchair" value="Tech" /> Tech
+</p>
+
+ 
+Comment: <textarea name="comment" maxlength="75" id="comments" required></textarea>
+
+<div id="warning"></div>
+
+
+<input type="submit" name="formSubmit" value="Submit">
+</form></div>
+
+
+
+
+
+<script type="text/javascript" src="js/check-username.js"></script>
+<script type="text/javascript" src="js/check-email.js"></script>
+<script type="text/javascript" src="js/check-comment.js"></script>
+</body>
+</html>
